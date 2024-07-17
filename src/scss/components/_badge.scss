@@ -6,7 +6,7 @@
   letter-spacing: 0.15em;
   padding: 0.375em 0.875em;
   border-radius: 0.4rem;
-  box-shadow: 0 0 2.4rem $shadowColor;
+  box-shadow: $blockShadow;
 
   @include media(">=xl") {
     font-size: 1.6rem;

@@ -1,0 +1,23 @@
+.subscribe {
+  padding: 2rem;
+  border-radius: 0.4rem;
+  background-color: $colorPrimary500;
+  display: grid;
+  gap: 1.6rem;
+
+  @include media(">=md") {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3.2rem;
+    padding: 3rem 4rem;
+  }
+
+  @include media(">=lg") {
+    padding: 10rem 6rem;
+  }
+
+  @include media(">=xl") {
+    padding: 11.5rem 8rem;
+    border-radius: 0.8rem;
+  }
+}

@@ -1,0 +1,77 @@
+.service-card {
+  @extend %linkReset;
+  background-color: $colorPrimary500;
+  color: $white;
+  border-radius: 0.4rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  @include media(">=xl") {
+    padding: 4rem 2.5rem;
+    border-radius: 0.8rem;
+  }
+
+  &__img {
+    margin: 0 0 2rem;
+  }
+
+  &__img-item {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    margin: 0 0 1.4rem;
+
+    @include media(">=xl") {
+      font-size: 2rem;
+    }
+  }
+
+  &__description {
+    @include clearMarginY("&");
+    margin: 0 0 2.8rem;
+    flex: 1 0 auto;
+
+    @include media(">=xl") {
+      margin: 0 0 3.6rem;
+    }
+  }
+
+  &__btn {
+    @extend %buttonReset;
+    width: 3.6rem;
+    height: 3.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: $colorPrimary300;
+    box-shadow: $blockShadow;
+    @include transition(background-color);
+
+    @include media(">=xl") {
+      width: 4.6rem;
+      height: 4.6rem;
+    }
+  }
+
+  &:hover &__btn {
+    background-color: $colorAccent400;
+  }
+
+  &__btn-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    @include media(">=xl") {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

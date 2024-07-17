@@ -7,12 +7,15 @@
   background-color: $colorAccent400;
   color: $white;
   font: 700 1.4rem / 1.5 $headingFontFamily;
-  padding: 0.825em 1.5em;
+  padding: 0.825em 1.8em;
   border-radius: 0.4rem;
-  box-shadow: 0 0 2.4rem rgba($shadowColor, 0.42);
+  box-shadow: $blockShadow;
+  gap: 1rem;
+  min-height: 4.4rem;
 
   @include media(">=xl") {
     font-size: 1.6rem;
+    min-height: 5.6rem;
   }
 
   &:hover,
@@ -21,14 +24,29 @@
     background-color: $colorAccent300;
   }
 
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $white;
+  }
+
   //#region btn size
   &--sm {
     padding: 0.375em 1.18em;
     font-weight: 500;
+    min-height: 3.2rem;
+
+    @include media(">=xl") {
+      min-height: 3.6rem;
+    }
   }
   //#endregion btn size
 
   //#region btn appearance
+  &--rounded {
+    border-radius: 999rem;
+  }
+
   &--dark {
     background-color: $colorPrimary400;
 

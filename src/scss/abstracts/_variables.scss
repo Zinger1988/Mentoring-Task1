@@ -15,6 +15,7 @@ $black: #000;
 $grey: #e6e7e8;
 
 $shadowColor: #0f1018;
+$blockShadow: 0 0 2.4rem $shadowColor;
 
 // font size of html-element that equals to 16px * 0.625 = 10px
 // used as rem-base for nested elements font-size properties

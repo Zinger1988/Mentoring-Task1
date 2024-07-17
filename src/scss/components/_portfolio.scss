@@ -1,6 +1,7 @@
 .portfolio {
   display: grid;
   gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 
   @include media(">=md") {
     grid-template-columns: repeat(2, 1fr);
@@ -16,14 +17,13 @@
   }
 
   &__item {
-    min-height: 75vw;
-    height: auto;
-
     @include media(">=md") {
       min-height: 26rem;
     }
 
     @include media(">=lg") {
+      height: auto;
+
       &:nth-child(3n + 2),
       &:nth-child(4) {
         grid-row: span 2;
