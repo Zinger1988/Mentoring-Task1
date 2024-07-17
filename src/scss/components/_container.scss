@@ -1,0 +1,16 @@
+.container,
+[class*="__container"] {
+  padding: 0 1.6rem;
+  max-width: 76.8rem;
+  min-width: 32rem;
+  margin: 0 auto;
+
+  @include media(">=sm") {
+    padding: 0 2.4rem;
+  }
+
+  @include media(">=lg") {
+    padding: 0 3.2rem;
+    max-width: 138.4rem;
+  }
+}

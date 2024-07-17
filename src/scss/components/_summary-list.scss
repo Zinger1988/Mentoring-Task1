@@ -1,0 +1,25 @@
+.summary-list {
+  @extend %listReset;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1.2rem 1rem;
+
+  @include media(">=md") {
+    grid-template-columns: min-content 1fr min-content 1fr;
+  }
+
+  @include media(">=xl") {
+    gap: 2.8rem 2rem;
+  }
+
+  &__term {
+    position: relative;
+    padding-right: 1.4rem;
+
+    &::after {
+      position: absolute;
+      content: ":";
+      right: 0;
+    }
+  }
+}

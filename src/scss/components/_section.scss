@@ -1,0 +1,26 @@
+.section {
+  padding: 5rem 0;
+
+  @include media(">=xl") {
+    padding: 12rem 0;
+  }
+
+  &--lighten {
+    background-color: $colorPrimary400;
+    color: $white;
+  }
+
+  &__title {
+    margin: 0 0 2.4rem;
+
+    @include media(">=xl") {
+      margin: 0 0 5.5rem;
+    }
+  }
+
+  &--hero {
+    @include media(">=lg") {
+      padding-bottom: 3rem;
+    }
+  }
+}

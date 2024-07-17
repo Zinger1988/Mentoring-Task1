@@ -1,0 +1,11 @@
+.reviews {
+  @include media(">=lg") {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  @include media(">=xl") {
+    gap: 2.4rem;
+  }
+}

@@ -1,0 +1,32 @@
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+
+  @include media(">=xl") {
+    gap: 1.8rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: $colorAccent400;
+    flex: 0 0 auto;
+
+    @include media(">=xl") {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  &__label {
+    flex: 1 0 auto;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,13 @@
+.skills {
+  &__item {
+    margin: 0 0 2rem;
+
+    @include media(">=xl") {
+      margin: 0 0 4rem;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

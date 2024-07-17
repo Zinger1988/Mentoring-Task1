@@ -1,0 +1,33 @@
+.portfolio {
+  display: grid;
+  gap: 2rem;
+
+  @include media(">=md") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media(">=lg") {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(20rem, 1fr));
+  }
+
+  @include media(">=xl") {
+    gap: 2.4rem;
+  }
+
+  &__item {
+    min-height: 75vw;
+    height: auto;
+
+    @include media(">=md") {
+      min-height: 26rem;
+    }
+
+    @include media(">=lg") {
+      &:nth-child(3n + 2),
+      &:nth-child(4) {
+        grid-row: span 2;
+      }
+    }
+  }
+}

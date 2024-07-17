@@ -1,0 +1,19 @@
+@mixin clearMarginY($context) {
+  #{$context} > *:first-child {
+    margin-top: 0;
+  }
+
+  #{$context} > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin clearMarginX($context) {
+  #{$context} > *:first-child {
+    margin-left: 0;
+  }
+
+  #{$context} > *:last-child {
+    margin-right: 0;
+  }
+}

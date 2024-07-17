@@ -1,0 +1,80 @@
+.btn {
+  @extend %buttonReset;
+  @include transition(box-shadow, background-color, color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorAccent400;
+  color: $white;
+  font: 700 1.4rem / 1.5 $headingFontFamily;
+  padding: 0.825em 1.5em;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 2.4rem rgba($shadowColor, 0.42);
+
+  @include media(">=xl") {
+    font-size: 1.6rem;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 0.5rem rgba($colorAccent400, 0.6);
+    background-color: $colorAccent300;
+  }
+
+  //#region btn size
+  &--sm {
+    padding: 0.375em 1.18em;
+    font-weight: 500;
+  }
+  //#endregion btn size
+
+  //#region btn appearance
+  &--dark {
+    background-color: $colorPrimary400;
+
+    &:hover,
+    &:focus {
+      background-color: $colorPrimary300;
+      box-shadow: 0 0 0 0.5rem rgba($white, 0.2);
+    }
+  }
+
+  &--outline {
+    box-shadow: inset 0 0 0 0.2rem $white;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 0.2rem $white, 0 0 0 0.5rem rgba($white, 0.3);
+    }
+  }
+
+  &--text-only,
+  &--text-only:hover,
+  &--text-only:focus {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  &--text-only {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 0.2rem;
+      background-color: $colorAccent400;
+      @include transition(width, left);
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+  //#endregion btn appearance
+}

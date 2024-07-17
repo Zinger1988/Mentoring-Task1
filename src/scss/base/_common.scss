@@ -1,0 +1,19 @@
+html {
+  font-size: $remBase;
+}
+
+body {
+  font: 300 1.4rem/ 1.5 $baseFontFamily;
+  background-color: $colorPrimary500;
+  color: $white;
+
+  @include media(">=xl") {
+    font-size: 1.6rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

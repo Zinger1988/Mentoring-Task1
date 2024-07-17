@@ -1,0 +1,28 @@
+%buttonReset {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+%linkReset {
+  text-decoration: none;
+  color: inherit;
+}
+
+%listReset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  dd,
+  dt {
+    margin: 0;
+    padding: 0;
+  }
+}

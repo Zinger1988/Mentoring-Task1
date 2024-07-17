@@ -1,0 +1,63 @@
+.progress {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 0.6rem 2rem;
+
+  @include media(">=xl") {
+    gap: 1rem 2rem;
+  }
+
+  @for $i from 0 through 100 {
+    &__bar[value="#{$i}"] {
+      & ~ .progress__value::before {
+        content: "#{$i}%";
+      }
+      & ~ .progress__bg .progress__indicator {
+        width: $i * 1%;
+      }
+    }
+  }
+
+  &__bar {
+    display: none;
+  }
+
+  &__label,
+  &__value {
+    font-size: 1.6rem;
+    line-height: 1.25;
+
+    @include media(">=xl") {
+      font-size: 2rem;
+    }
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+
+  &__bg {
+    grid-column: 1 / -1;
+    background: $white;
+    position: relative;
+    height: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    @include media(">=xl") {
+      height: 1.8rem;
+      border-radius: 0.9rem;
+    }
+  }
+
+  &__indicator {
+    border-radius: 0.9rem;
+    background: $colorAccent400;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+  }
+}

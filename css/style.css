@@ -1,0 +1,1786 @@
+.btn {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.summary-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.summary-list dd,
+.summary-list dt {
+  margin: 0;
+  padding: 0;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 300 1.4rem/1.5 "Public Sans", Arial, sans-serif;
+  background-color: #1f2235;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+b {
+  font-weight: 700;
+}
+
+.container,
+[class*=__container] {
+  padding: 0 1.6rem;
+  max-width: 76.8rem;
+  min-width: 32rem;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .container,
+  [class*=__container] {
+    padding: 0 2.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  [class*=__container] {
+    padding: 0 3.2rem;
+    max-width: 138.4rem;
+  }
+}
+
+.section {
+  padding: 5rem 0;
+}
+@media (min-width: 1200px) {
+  .section {
+    padding: 12rem 0;
+  }
+}
+.section--lighten {
+  background-color: #24263b;
+  color: #fff;
+}
+.section__title {
+  margin: 0 0 2.4rem;
+}
+@media (min-width: 1200px) {
+  .section__title {
+    margin: 0 0 5.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .section--hero {
+    padding-bottom: 3rem;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.title__badge {
+  margin: 0 0 1rem;
+}
+@media (min-width: 1200px) {
+  .title__badge {
+    margin: 0 0 1.9rem;
+  }
+}
+.title__heading {
+  font: 600 2.8rem/1.333 "Outfit", Arial, sans-serif;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  .title__heading {
+    font-size: 3.6rem;
+  }
+}
+.title__heading--lg {
+  font-size: 3.2rem;
+  line-height: 1.125;
+}
+@media (min-width: 1200px) {
+  .title__heading--lg {
+    font-size: 5.5rem;
+  }
+}
+.title__heading--xl {
+  font-size: 3.6rem;
+  line-height: 1.125;
+}
+@media (min-width: 1200px) {
+  .title__heading--xl {
+    font-size: 6.4rem;
+  }
+}
+.title--center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  font: 500 1.4rem/1.5 "Outfit", Arial, sans-serif;
+  background-color: #24263b;
+  color: #fff;
+  letter-spacing: 0.15em;
+  padding: 0.375em 0.875em;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0 0 2.4rem #0f1018;
+          box-shadow: 0 0 2.4rem #0f1018;
+}
+@media (min-width: 1200px) {
+  .badge {
+    font-size: 1.6rem;
+  }
+}
+.badge--nulled {
+  padding: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.icon {
+  display: inline-block;
+  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.hero > *:first-child {
+  margin-top: 0;
+}
+.hero > *:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2.4rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    gap: 6rem;
+  }
+}
+.hero__col {
+  margin: 0 0 3rem;
+}
+@media (min-width: 992px) {
+  .hero__col {
+    margin: 0;
+  }
+}
+.hero__title {
+  margin: 0 0 1.2rem;
+}
+@media (min-width: 1200px) {
+  .hero__title {
+    margin: 0 0 1.8rem;
+  }
+}
+.hero__description {
+  margin: 0 0 2rem;
+  line-height: 1.625;
+}
+.hero__description > *:first-child {
+  margin-top: 0;
+}
+.hero__description > *:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .hero__description {
+    margin: 0 0 3.6rem;
+  }
+}
+.hero__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.8rem;
+}
+@media (min-width: 1200px) {
+  .hero__controls {
+    gap: 2.3rem;
+  }
+}
+.hero__btn {
+  min-width: 12rem;
+}
+@media (min-width: 1200px) {
+  .hero__btn {
+    min-width: 16rem;
+  }
+}
+.hero__img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .hero__img {
+    margin: 5.4rem auto 0;
+    max-width: 600px;
+  }
+}
+
+.btn {
+  -webkit-transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+  -webkit-transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+  transition: box-shadow 0.3s, background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fe461c;
+  color: #fff;
+  font: 700 1.4rem/1.5 "Outfit", Arial, sans-serif;
+  padding: 0.825em 1.5em;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0 0 2.4rem rgba(15, 16, 24, 0.42);
+          box-shadow: 0 0 2.4rem rgba(15, 16, 24, 0.42);
+}
+@media (min-width: 1200px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+.btn:hover, .btn:focus {
+  -webkit-box-shadow: 0 0 0 0.5rem rgba(254, 70, 28, 0.6);
+          box-shadow: 0 0 0 0.5rem rgba(254, 70, 28, 0.6);
+  background-color: #ff603c;
+}
+.btn--sm {
+  padding: 0.375em 1.18em;
+  font-weight: 500;
+}
+.btn--dark {
+  background-color: #24263b;
+}
+.btn--dark:hover, .btn--dark:focus {
+  background-color: #373953;
+  -webkit-box-shadow: 0 0 0 0.5rem rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 0 0.5rem rgba(255, 255, 255, 0.2);
+}
+.btn--outline {
+  -webkit-box-shadow: inset 0 0 0 0.2rem #fff;
+          box-shadow: inset 0 0 0 0.2rem #fff;
+  background-color: transparent;
+}
+.btn--outline:hover, .btn--outline:focus {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 0 0.2rem #fff, 0 0 0 0.5rem rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0 0 0 0.2rem #fff, 0 0 0 0.5rem rgba(255, 255, 255, 0.3);
+}
+.btn--text-only, .btn--text-only:hover, .btn--text-only:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+.btn--text-only {
+  position: relative;
+}
+.btn--text-only::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: #fe461c;
+  -webkit-transition: width 0.3s, left 0.3s;
+  transition: width 0.3s, left 0.3s;
+}
+.btn--text-only:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.summary-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content 1rem 1fr;
+  -ms-grid-columns: min-content 1rem 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+  gap: 1.2rem 1rem;
+}
+@media (min-width: 768px) {
+  .summary-list {
+    -ms-grid-columns: -webkit-min-content 1fr -webkit-min-content 1fr;
+    -ms-grid-columns: min-content 1fr min-content 1fr;
+    grid-template-columns: -webkit-min-content 1fr -webkit-min-content 1fr;
+    grid-template-columns: min-content 1fr min-content 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .summary-list {
+    gap: 2.8rem 2rem;
+  }
+}
+.summary-list__term {
+  position: relative;
+  padding-right: 1.4rem;
+}
+.summary-list__term::after {
+  position: absolute;
+  content: ":";
+  right: 0;
+}
+
+.tabs__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 3rem;
+  gap: 0.4rem 0.8rem;
+}
+@media (min-width: 1200px) {
+  .tabs__controls {
+    gap: 1rem 2rem;
+    margin: 0 0 4rem;
+  }
+}
+.tabs__controls--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.progress {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem -webkit-min-content;
+  -ms-grid-columns: 1fr 2rem min-content;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
+  gap: 0.6rem 2rem;
+}
+@media (min-width: 1200px) {
+  .progress {
+    gap: 1rem 2rem;
+  }
+}
+.progress__bar[value="0"] ~ .progress__value::before {
+  content: "0%";
+}
+.progress__bar[value="0"] ~ .progress__bg .progress__indicator {
+  width: 0%;
+}
+.progress__bar[value="1"] ~ .progress__value::before {
+  content: "1%";
+}
+.progress__bar[value="1"] ~ .progress__bg .progress__indicator {
+  width: 1%;
+}
+.progress__bar[value="2"] ~ .progress__value::before {
+  content: "2%";
+}
+.progress__bar[value="2"] ~ .progress__bg .progress__indicator {
+  width: 2%;
+}
+.progress__bar[value="3"] ~ .progress__value::before {
+  content: "3%";
+}
+.progress__bar[value="3"] ~ .progress__bg .progress__indicator {
+  width: 3%;
+}
+.progress__bar[value="4"] ~ .progress__value::before {
+  content: "4%";
+}
+.progress__bar[value="4"] ~ .progress__bg .progress__indicator {
+  width: 4%;
+}
+.progress__bar[value="5"] ~ .progress__value::before {
+  content: "5%";
+}
+.progress__bar[value="5"] ~ .progress__bg .progress__indicator {
+  width: 5%;
+}
+.progress__bar[value="6"] ~ .progress__value::before {
+  content: "6%";
+}
+.progress__bar[value="6"] ~ .progress__bg .progress__indicator {
+  width: 6%;
+}
+.progress__bar[value="7"] ~ .progress__value::before {
+  content: "7%";
+}
+.progress__bar[value="7"] ~ .progress__bg .progress__indicator {
+  width: 7%;
+}
+.progress__bar[value="8"] ~ .progress__value::before {
+  content: "8%";
+}
+.progress__bar[value="8"] ~ .progress__bg .progress__indicator {
+  width: 8%;
+}
+.progress__bar[value="9"] ~ .progress__value::before {
+  content: "9%";
+}
+.progress__bar[value="9"] ~ .progress__bg .progress__indicator {
+  width: 9%;
+}
+.progress__bar[value="10"] ~ .progress__value::before {
+  content: "10%";
+}
+.progress__bar[value="10"] ~ .progress__bg .progress__indicator {
+  width: 10%;
+}
+.progress__bar[value="11"] ~ .progress__value::before {
+  content: "11%";
+}
+.progress__bar[value="11"] ~ .progress__bg .progress__indicator {
+  width: 11%;
+}
+.progress__bar[value="12"] ~ .progress__value::before {
+  content: "12%";
+}
+.progress__bar[value="12"] ~ .progress__bg .progress__indicator {
+  width: 12%;
+}
+.progress__bar[value="13"] ~ .progress__value::before {
+  content: "13%";
+}
+.progress__bar[value="13"] ~ .progress__bg .progress__indicator {
+  width: 13%;
+}
+.progress__bar[value="14"] ~ .progress__value::before {
+  content: "14%";
+}
+.progress__bar[value="14"] ~ .progress__bg .progress__indicator {
+  width: 14%;
+}
+.progress__bar[value="15"] ~ .progress__value::before {
+  content: "15%";
+}
+.progress__bar[value="15"] ~ .progress__bg .progress__indicator {
+  width: 15%;
+}
+.progress__bar[value="16"] ~ .progress__value::before {
+  content: "16%";
+}
+.progress__bar[value="16"] ~ .progress__bg .progress__indicator {
+  width: 16%;
+}
+.progress__bar[value="17"] ~ .progress__value::before {
+  content: "17%";
+}
+.progress__bar[value="17"] ~ .progress__bg .progress__indicator {
+  width: 17%;
+}
+.progress__bar[value="18"] ~ .progress__value::before {
+  content: "18%";
+}
+.progress__bar[value="18"] ~ .progress__bg .progress__indicator {
+  width: 18%;
+}
+.progress__bar[value="19"] ~ .progress__value::before {
+  content: "19%";
+}
+.progress__bar[value="19"] ~ .progress__bg .progress__indicator {
+  width: 19%;
+}
+.progress__bar[value="20"] ~ .progress__value::before {
+  content: "20%";
+}
+.progress__bar[value="20"] ~ .progress__bg .progress__indicator {
+  width: 20%;
+}
+.progress__bar[value="21"] ~ .progress__value::before {
+  content: "21%";
+}
+.progress__bar[value="21"] ~ .progress__bg .progress__indicator {
+  width: 21%;
+}
+.progress__bar[value="22"] ~ .progress__value::before {
+  content: "22%";
+}
+.progress__bar[value="22"] ~ .progress__bg .progress__indicator {
+  width: 22%;
+}
+.progress__bar[value="23"] ~ .progress__value::before {
+  content: "23%";
+}
+.progress__bar[value="23"] ~ .progress__bg .progress__indicator {
+  width: 23%;
+}
+.progress__bar[value="24"] ~ .progress__value::before {
+  content: "24%";
+}
+.progress__bar[value="24"] ~ .progress__bg .progress__indicator {
+  width: 24%;
+}
+.progress__bar[value="25"] ~ .progress__value::before {
+  content: "25%";
+}
+.progress__bar[value="25"] ~ .progress__bg .progress__indicator {
+  width: 25%;
+}
+.progress__bar[value="26"] ~ .progress__value::before {
+  content: "26%";
+}
+.progress__bar[value="26"] ~ .progress__bg .progress__indicator {
+  width: 26%;
+}
+.progress__bar[value="27"] ~ .progress__value::before {
+  content: "27%";
+}
+.progress__bar[value="27"] ~ .progress__bg .progress__indicator {
+  width: 27%;
+}
+.progress__bar[value="28"] ~ .progress__value::before {
+  content: "28%";
+}
+.progress__bar[value="28"] ~ .progress__bg .progress__indicator {
+  width: 28%;
+}
+.progress__bar[value="29"] ~ .progress__value::before {
+  content: "29%";
+}
+.progress__bar[value="29"] ~ .progress__bg .progress__indicator {
+  width: 29%;
+}
+.progress__bar[value="30"] ~ .progress__value::before {
+  content: "30%";
+}
+.progress__bar[value="30"] ~ .progress__bg .progress__indicator {
+  width: 30%;
+}
+.progress__bar[value="31"] ~ .progress__value::before {
+  content: "31%";
+}
+.progress__bar[value="31"] ~ .progress__bg .progress__indicator {
+  width: 31%;
+}
+.progress__bar[value="32"] ~ .progress__value::before {
+  content: "32%";
+}
+.progress__bar[value="32"] ~ .progress__bg .progress__indicator {
+  width: 32%;
+}
+.progress__bar[value="33"] ~ .progress__value::before {
+  content: "33%";
+}
+.progress__bar[value="33"] ~ .progress__bg .progress__indicator {
+  width: 33%;
+}
+.progress__bar[value="34"] ~ .progress__value::before {
+  content: "34%";
+}
+.progress__bar[value="34"] ~ .progress__bg .progress__indicator {
+  width: 34%;
+}
+.progress__bar[value="35"] ~ .progress__value::before {
+  content: "35%";
+}
+.progress__bar[value="35"] ~ .progress__bg .progress__indicator {
+  width: 35%;
+}
+.progress__bar[value="36"] ~ .progress__value::before {
+  content: "36%";
+}
+.progress__bar[value="36"] ~ .progress__bg .progress__indicator {
+  width: 36%;
+}
+.progress__bar[value="37"] ~ .progress__value::before {
+  content: "37%";
+}
+.progress__bar[value="37"] ~ .progress__bg .progress__indicator {
+  width: 37%;
+}
+.progress__bar[value="38"] ~ .progress__value::before {
+  content: "38%";
+}
+.progress__bar[value="38"] ~ .progress__bg .progress__indicator {
+  width: 38%;
+}
+.progress__bar[value="39"] ~ .progress__value::before {
+  content: "39%";
+}
+.progress__bar[value="39"] ~ .progress__bg .progress__indicator {
+  width: 39%;
+}
+.progress__bar[value="40"] ~ .progress__value::before {
+  content: "40%";
+}
+.progress__bar[value="40"] ~ .progress__bg .progress__indicator {
+  width: 40%;
+}
+.progress__bar[value="41"] ~ .progress__value::before {
+  content: "41%";
+}
+.progress__bar[value="41"] ~ .progress__bg .progress__indicator {
+  width: 41%;
+}
+.progress__bar[value="42"] ~ .progress__value::before {
+  content: "42%";
+}
+.progress__bar[value="42"] ~ .progress__bg .progress__indicator {
+  width: 42%;
+}
+.progress__bar[value="43"] ~ .progress__value::before {
+  content: "43%";
+}
+.progress__bar[value="43"] ~ .progress__bg .progress__indicator {
+  width: 43%;
+}
+.progress__bar[value="44"] ~ .progress__value::before {
+  content: "44%";
+}
+.progress__bar[value="44"] ~ .progress__bg .progress__indicator {
+  width: 44%;
+}
+.progress__bar[value="45"] ~ .progress__value::before {
+  content: "45%";
+}
+.progress__bar[value="45"] ~ .progress__bg .progress__indicator {
+  width: 45%;
+}
+.progress__bar[value="46"] ~ .progress__value::before {
+  content: "46%";
+}
+.progress__bar[value="46"] ~ .progress__bg .progress__indicator {
+  width: 46%;
+}
+.progress__bar[value="47"] ~ .progress__value::before {
+  content: "47%";
+}
+.progress__bar[value="47"] ~ .progress__bg .progress__indicator {
+  width: 47%;
+}
+.progress__bar[value="48"] ~ .progress__value::before {
+  content: "48%";
+}
+.progress__bar[value="48"] ~ .progress__bg .progress__indicator {
+  width: 48%;
+}
+.progress__bar[value="49"] ~ .progress__value::before {
+  content: "49%";
+}
+.progress__bar[value="49"] ~ .progress__bg .progress__indicator {
+  width: 49%;
+}
+.progress__bar[value="50"] ~ .progress__value::before {
+  content: "50%";
+}
+.progress__bar[value="50"] ~ .progress__bg .progress__indicator {
+  width: 50%;
+}
+.progress__bar[value="51"] ~ .progress__value::before {
+  content: "51%";
+}
+.progress__bar[value="51"] ~ .progress__bg .progress__indicator {
+  width: 51%;
+}
+.progress__bar[value="52"] ~ .progress__value::before {
+  content: "52%";
+}
+.progress__bar[value="52"] ~ .progress__bg .progress__indicator {
+  width: 52%;
+}
+.progress__bar[value="53"] ~ .progress__value::before {
+  content: "53%";
+}
+.progress__bar[value="53"] ~ .progress__bg .progress__indicator {
+  width: 53%;
+}
+.progress__bar[value="54"] ~ .progress__value::before {
+  content: "54%";
+}
+.progress__bar[value="54"] ~ .progress__bg .progress__indicator {
+  width: 54%;
+}
+.progress__bar[value="55"] ~ .progress__value::before {
+  content: "55%";
+}
+.progress__bar[value="55"] ~ .progress__bg .progress__indicator {
+  width: 55%;
+}
+.progress__bar[value="56"] ~ .progress__value::before {
+  content: "56%";
+}
+.progress__bar[value="56"] ~ .progress__bg .progress__indicator {
+  width: 56%;
+}
+.progress__bar[value="57"] ~ .progress__value::before {
+  content: "57%";
+}
+.progress__bar[value="57"] ~ .progress__bg .progress__indicator {
+  width: 57%;
+}
+.progress__bar[value="58"] ~ .progress__value::before {
+  content: "58%";
+}
+.progress__bar[value="58"] ~ .progress__bg .progress__indicator {
+  width: 58%;
+}
+.progress__bar[value="59"] ~ .progress__value::before {
+  content: "59%";
+}
+.progress__bar[value="59"] ~ .progress__bg .progress__indicator {
+  width: 59%;
+}
+.progress__bar[value="60"] ~ .progress__value::before {
+  content: "60%";
+}
+.progress__bar[value="60"] ~ .progress__bg .progress__indicator {
+  width: 60%;
+}
+.progress__bar[value="61"] ~ .progress__value::before {
+  content: "61%";
+}
+.progress__bar[value="61"] ~ .progress__bg .progress__indicator {
+  width: 61%;
+}
+.progress__bar[value="62"] ~ .progress__value::before {
+  content: "62%";
+}
+.progress__bar[value="62"] ~ .progress__bg .progress__indicator {
+  width: 62%;
+}
+.progress__bar[value="63"] ~ .progress__value::before {
+  content: "63%";
+}
+.progress__bar[value="63"] ~ .progress__bg .progress__indicator {
+  width: 63%;
+}
+.progress__bar[value="64"] ~ .progress__value::before {
+  content: "64%";
+}
+.progress__bar[value="64"] ~ .progress__bg .progress__indicator {
+  width: 64%;
+}
+.progress__bar[value="65"] ~ .progress__value::before {
+  content: "65%";
+}
+.progress__bar[value="65"] ~ .progress__bg .progress__indicator {
+  width: 65%;
+}
+.progress__bar[value="66"] ~ .progress__value::before {
+  content: "66%";
+}
+.progress__bar[value="66"] ~ .progress__bg .progress__indicator {
+  width: 66%;
+}
+.progress__bar[value="67"] ~ .progress__value::before {
+  content: "67%";
+}
+.progress__bar[value="67"] ~ .progress__bg .progress__indicator {
+  width: 67%;
+}
+.progress__bar[value="68"] ~ .progress__value::before {
+  content: "68%";
+}
+.progress__bar[value="68"] ~ .progress__bg .progress__indicator {
+  width: 68%;
+}
+.progress__bar[value="69"] ~ .progress__value::before {
+  content: "69%";
+}
+.progress__bar[value="69"] ~ .progress__bg .progress__indicator {
+  width: 69%;
+}
+.progress__bar[value="70"] ~ .progress__value::before {
+  content: "70%";
+}
+.progress__bar[value="70"] ~ .progress__bg .progress__indicator {
+  width: 70%;
+}
+.progress__bar[value="71"] ~ .progress__value::before {
+  content: "71%";
+}
+.progress__bar[value="71"] ~ .progress__bg .progress__indicator {
+  width: 71%;
+}
+.progress__bar[value="72"] ~ .progress__value::before {
+  content: "72%";
+}
+.progress__bar[value="72"] ~ .progress__bg .progress__indicator {
+  width: 72%;
+}
+.progress__bar[value="73"] ~ .progress__value::before {
+  content: "73%";
+}
+.progress__bar[value="73"] ~ .progress__bg .progress__indicator {
+  width: 73%;
+}
+.progress__bar[value="74"] ~ .progress__value::before {
+  content: "74%";
+}
+.progress__bar[value="74"] ~ .progress__bg .progress__indicator {
+  width: 74%;
+}
+.progress__bar[value="75"] ~ .progress__value::before {
+  content: "75%";
+}
+.progress__bar[value="75"] ~ .progress__bg .progress__indicator {
+  width: 75%;
+}
+.progress__bar[value="76"] ~ .progress__value::before {
+  content: "76%";
+}
+.progress__bar[value="76"] ~ .progress__bg .progress__indicator {
+  width: 76%;
+}
+.progress__bar[value="77"] ~ .progress__value::before {
+  content: "77%";
+}
+.progress__bar[value="77"] ~ .progress__bg .progress__indicator {
+  width: 77%;
+}
+.progress__bar[value="78"] ~ .progress__value::before {
+  content: "78%";
+}
+.progress__bar[value="78"] ~ .progress__bg .progress__indicator {
+  width: 78%;
+}
+.progress__bar[value="79"] ~ .progress__value::before {
+  content: "79%";
+}
+.progress__bar[value="79"] ~ .progress__bg .progress__indicator {
+  width: 79%;
+}
+.progress__bar[value="80"] ~ .progress__value::before {
+  content: "80%";
+}
+.progress__bar[value="80"] ~ .progress__bg .progress__indicator {
+  width: 80%;
+}
+.progress__bar[value="81"] ~ .progress__value::before {
+  content: "81%";
+}
+.progress__bar[value="81"] ~ .progress__bg .progress__indicator {
+  width: 81%;
+}
+.progress__bar[value="82"] ~ .progress__value::before {
+  content: "82%";
+}
+.progress__bar[value="82"] ~ .progress__bg .progress__indicator {
+  width: 82%;
+}
+.progress__bar[value="83"] ~ .progress__value::before {
+  content: "83%";
+}
+.progress__bar[value="83"] ~ .progress__bg .progress__indicator {
+  width: 83%;
+}
+.progress__bar[value="84"] ~ .progress__value::before {
+  content: "84%";
+}
+.progress__bar[value="84"] ~ .progress__bg .progress__indicator {
+  width: 84%;
+}
+.progress__bar[value="85"] ~ .progress__value::before {
+  content: "85%";
+}
+.progress__bar[value="85"] ~ .progress__bg .progress__indicator {
+  width: 85%;
+}
+.progress__bar[value="86"] ~ .progress__value::before {
+  content: "86%";
+}
+.progress__bar[value="86"] ~ .progress__bg .progress__indicator {
+  width: 86%;
+}
+.progress__bar[value="87"] ~ .progress__value::before {
+  content: "87%";
+}
+.progress__bar[value="87"] ~ .progress__bg .progress__indicator {
+  width: 87%;
+}
+.progress__bar[value="88"] ~ .progress__value::before {
+  content: "88%";
+}
+.progress__bar[value="88"] ~ .progress__bg .progress__indicator {
+  width: 88%;
+}
+.progress__bar[value="89"] ~ .progress__value::before {
+  content: "89%";
+}
+.progress__bar[value="89"] ~ .progress__bg .progress__indicator {
+  width: 89%;
+}
+.progress__bar[value="90"] ~ .progress__value::before {
+  content: "90%";
+}
+.progress__bar[value="90"] ~ .progress__bg .progress__indicator {
+  width: 90%;
+}
+.progress__bar[value="91"] ~ .progress__value::before {
+  content: "91%";
+}
+.progress__bar[value="91"] ~ .progress__bg .progress__indicator {
+  width: 91%;
+}
+.progress__bar[value="92"] ~ .progress__value::before {
+  content: "92%";
+}
+.progress__bar[value="92"] ~ .progress__bg .progress__indicator {
+  width: 92%;
+}
+.progress__bar[value="93"] ~ .progress__value::before {
+  content: "93%";
+}
+.progress__bar[value="93"] ~ .progress__bg .progress__indicator {
+  width: 93%;
+}
+.progress__bar[value="94"] ~ .progress__value::before {
+  content: "94%";
+}
+.progress__bar[value="94"] ~ .progress__bg .progress__indicator {
+  width: 94%;
+}
+.progress__bar[value="95"] ~ .progress__value::before {
+  content: "95%";
+}
+.progress__bar[value="95"] ~ .progress__bg .progress__indicator {
+  width: 95%;
+}
+.progress__bar[value="96"] ~ .progress__value::before {
+  content: "96%";
+}
+.progress__bar[value="96"] ~ .progress__bg .progress__indicator {
+  width: 96%;
+}
+.progress__bar[value="97"] ~ .progress__value::before {
+  content: "97%";
+}
+.progress__bar[value="97"] ~ .progress__bg .progress__indicator {
+  width: 97%;
+}
+.progress__bar[value="98"] ~ .progress__value::before {
+  content: "98%";
+}
+.progress__bar[value="98"] ~ .progress__bg .progress__indicator {
+  width: 98%;
+}
+.progress__bar[value="99"] ~ .progress__value::before {
+  content: "99%";
+}
+.progress__bar[value="99"] ~ .progress__bg .progress__indicator {
+  width: 99%;
+}
+.progress__bar[value="100"] ~ .progress__value::before {
+  content: "100%";
+}
+.progress__bar[value="100"] ~ .progress__bg .progress__indicator {
+  width: 100%;
+}
+.progress__bar {
+  display: none;
+}
+.progress__label, .progress__value {
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+@media (min-width: 1200px) {
+  .progress__label, .progress__value {
+    font-size: 2rem;
+  }
+}
+.progress__label {
+  font-weight: bold;
+}
+.progress__bg {
+  grid-column: 1/-1;
+  background: #fff;
+  position: relative;
+  height: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .progress__bg {
+    height: 1.8rem;
+    border-radius: 0.9rem;
+  }
+}
+.progress__indicator {
+  border-radius: 0.9rem;
+  background: #fe461c;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+}
+
+.skills__item {
+  margin: 0 0 2rem;
+}
+@media (min-width: 1200px) {
+  .skills__item {
+    margin: 0 0 4rem;
+  }
+}
+.skills__item:last-child {
+  margin: 0;
+}
+
+.portfolio-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 30rem;
+  position: relative;
+  padding: 1.6rem;
+  background-color: grey;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .portfolio-card {
+    padding: 2.8rem;
+    border-radius: 0.8rem;
+  }
+}
+.portfolio-card__image-item {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.4rem;
+  left: 0;
+  top: 0;
+  -webkit-transition: opacity 0.3s, filter 0.3s, transform 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-filter 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-filter 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, filter 0.3s, transform 0.3s;
+  transition: opacity 0.3s, filter 0.3s, transform 0.3s, -webkit-filter 0.3s, -webkit-transform 0.3s;
+}
+.portfolio-card__text {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+}
+.portfolio-card__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+}
+@media (min-width: 1200px) {
+  .portfolio-card__title {
+    font-size: 2.4rem;
+  }
+}
+.portfolio-card__description > *:first-child {
+  margin-top: 0;
+}
+.portfolio-card__description > *:last-child {
+  margin-bottom: 0;
+}
+.portfolio-card:hover .portfolio-card__text {
+  opacity: 1;
+}
+.portfolio-card:hover .portfolio-card__image-item {
+  opacity: 0.3;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .portfolio {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .portfolio {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (minmax(20rem, 1fr))[3];
+    grid-template-rows: repeat(3, minmax(20rem, 1fr));
+  }
+  .portfolio > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .portfolio > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .portfolio > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .portfolio > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .portfolio > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .portfolio > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .portfolio > *:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .portfolio > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .portfolio > *:nth-child(9) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    gap: 2.4rem;
+  }
+}
+.portfolio__item {
+  min-height: 75vw;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .portfolio__item {
+    min-height: 26rem;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio__item:nth-child(3n+2), .portfolio__item:nth-child(4) {
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+  }
+}
+
+.post-card__img {
+  padding: 37% 0;
+  position: relative;
+  margin: 0 0 1.8rem;
+}
+@media (min-width: 1200px) {
+  .post-card__img {
+    margin: 0 0 2.6rem;
+  }
+}
+.post-card__img-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.4rem;
+}
+@media (min-width: 1200px) {
+  .post-card__img-item {
+    border-radius: 0.8rem;
+  }
+}
+.post-card__meta {
+  margin: 0 0 1.6rem;
+}
+@media (min-width: 1200px) {
+  .post-card__meta {
+    margin: 0 0 2rem;
+  }
+}
+.post-card__title {
+  font-size: 2rem;
+  margin: 0 0 0.6rem;
+}
+@media (min-width: 1200px) {
+  .post-card__title {
+    font-size: 2.4rem;
+    margin: 0 0 1rem;
+  }
+}
+.post-card__excerpt {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .posts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.6rem 1fr 1.6rem 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .posts {
+    gap: 2.4rem;
+  }
+}
+.posts__item {
+  margin: 0 0 4rem;
+}
+.posts__item:last-child {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .posts__item {
+    margin: 0;
+  }
+}
+
+.post-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.4rem;
+}
+@media (min-width: 1200px) {
+  .post-meta {
+    gap: 1.8rem;
+  }
+}
+.post-meta__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+.post-meta__icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #fe461c;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+@media (min-width: 1200px) {
+  .post-meta__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+.post-meta__label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  line-height: 1;
+}
+
+.review-card {
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  -ms-grid-rows: 1fr 25px auto;
+  grid-template-rows: 1fr auto;
+}
+@media (min-width: 1200px) {
+  .review-card {
+    gap: 50px;
+  }
+}
+.review-card__holder {
+  padding: 3rem 2.5rem 2.5rem;
+  background: #1f2235;
+  color: #fff;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .review-card__holder {
+    padding: 4rem 4rem 3rem;
+  }
+}
+.review-card__holder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-width: 25px;
+  border-bottom-width: 25px;
+  border-left-color: #1f2235;
+}
+@media (min-width: 1200px) {
+  .review-card__holder::after {
+    bottom: -50px;
+    border-width: 100px;
+    border-top-width: 50px;
+    border-bottom-width: 50px;
+  }
+}
+.review-card__header {
+  margin: 0 3rem 1.4rem 0;
+  padding: 0 0 1.4rem;
+  border-bottom: 1px solid #e6e7e8;
+  z-index: 10;
+}
+@media (min-width: 1200px) {
+  .review-card__header {
+    margin: 0 5rem 1.4rem 0;
+  }
+}
+.review-card__author {
+  font-size: 2rem;
+  margin: 0 0 0.6rem;
+  padding: 0 4rem 0 0;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .review-card__author {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0 5rem 0 0;
+  }
+}
+.review-card__author::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background: url("../img/reviews/quotes.svg") center/contain no-repeat;
+}
+@media (min-width: 1200px) {
+  .review-card__author::after {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.review-card__position {
+  margin: 0;
+}
+.review-card__text {
+  position: relative;
+  z-index: 10;
+}
+.review-card__text > *:first-child {
+  margin-top: 0;
+}
+.review-card__text > *:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .review-card__text {
+    line-height: 1.625;
+  }
+}
+.review-card__photo-item {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid #fe461c;
+}
+@media (min-width: 1200px) {
+  .review-card__photo-item {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .reviews {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    gap: 2.4rem;
+  }
+}

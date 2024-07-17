@@ -1,0 +1,23 @@
+.posts {
+  @include media(">=md") {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+
+  @include media(">=xl") {
+    gap: 2.4rem;
+  }
+
+  &__item {
+    margin: 0 0 4rem;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @include media(">=md") {
+      margin: 0;
+    }
+  }
+}

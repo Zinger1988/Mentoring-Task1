@@ -1,0 +1,34 @@
+// colors
+$colorPrimary600: #171929;
+$colorPrimary500: #1f2235;
+$colorPrimary400: #24263b;
+$colorPrimary300: #373953;
+
+$grey400: #d9d9d9;
+$grey500: #70717b;
+
+$colorAccent300: #ff603c;
+$colorAccent400: #fe461c;
+
+$white: #fff;
+$black: #000;
+$grey: #e6e7e8;
+
+$shadowColor: #0f1018;
+
+// font size of html-element that equals to 16px * 0.625 = 10px
+// used as rem-base for nested elements font-size properties
+$remBase: 62.5%;
+
+// override for inclide-media mixin breakpoints
+$breakpoints: (
+  "xs": 320px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// fonts
+$baseFontFamily: "Public Sans", Arial, sans-serif;
+$headingFontFamily: "Outfit", Arial, sans-serif;
