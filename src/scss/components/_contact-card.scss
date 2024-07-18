@@ -1,0 +1,63 @@
+.contact-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  align-content: center;
+  gap: 1.9rem;
+  background-color: $colorPrimary400;
+  border: $blockBorder;
+  border-radius: 0.8rem;
+  padding: 1.5rem 1.8rem;
+
+  @include media(">=xl") {
+    padding: 1.8rem 3rem;
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    box-shadow: $blockShadow;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    @include rounded();
+
+    @include media(">=xl") {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  &__icon-item {
+    width: 2rem;
+    height: 2rem;
+
+    @include media(">=xl") {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    margin: 0 0 0.4rem;
+
+    @include media(">=xl") {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__description {
+    @include clearMarginY("&");
+  }
+
+  &__link {
+    color: $white;
+    @include transition(color, text-decoration);
+
+    &:hover {
+      color: $colorAccent400;
+    }
+  }
+}

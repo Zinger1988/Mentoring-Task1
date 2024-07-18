@@ -44,7 +44,7 @@
 
   //#region btn appearance
   &--rounded {
-    border-radius: 999rem;
+    @include rounded();
   }
 
   &--dark {

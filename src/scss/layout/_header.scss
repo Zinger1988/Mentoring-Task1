@@ -1,0 +1,51 @@
+.header {
+  padding: 1.6rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: $colorPrimary500;
+  color: $white;
+  z-index: 1000;
+  border-bottom: 1px solid $borderColor;
+
+  @include media(">=lg") {
+    border-bottom: none;
+  }
+
+  @include media(">=xl") {
+    padding: 2.2rem 0;
+  }
+
+  &__holder {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    @include media(">=lg") {
+      justify-content: flex-end;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include media(">=lg") {
+      display: flex;
+    }
+  }
+
+  &__contact {
+    display: none;
+
+    @include media(">=lg") {
+      display: block;
+    }
+  }
+
+  &__menu {
+    @include media(">=lg") {
+      display: none;
+    }
+  }
+}

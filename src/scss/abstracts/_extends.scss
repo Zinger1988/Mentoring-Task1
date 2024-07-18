@@ -13,6 +13,17 @@
 %linkReset {
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+%textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 %listReset {

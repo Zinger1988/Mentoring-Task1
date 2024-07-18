@@ -19,5 +19,46 @@
   @include media(">=xl") {
     padding: 11.5rem 8rem;
     border-radius: 0.8rem;
+    grid-template-columns: 1fr calc(46% + 1.6rem);
+  }
+
+  &__form {
+    position: relative;
+    display: grid;
+    gap: 1.4rem;
+
+    @include media(">=md") {
+      display: block;
+    }
+  }
+
+  &__input {
+    text-align: center;
+
+    @include media(">=md") {
+      padding-right: 16rem;
+      text-align-last: left;
+    }
+
+    @include media(">=xl") {
+      padding-right: 21rem;
+      height: 60px;
+    }
+  }
+
+  &__btn {
+    @include media(">=md") {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: none;
+      min-width: 14rem;
+    }
+
+    @include media(">=xl") {
+      min-width: 19rem;
+      height: 60px;
+    }
   }
 }

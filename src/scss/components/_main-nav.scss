@@ -1,0 +1,17 @@
+.main-nav {
+  &__list {
+    @extend %listReset;
+    display: flex;
+    gap: 2.6rem;
+  }
+
+  &__link {
+    @extend %linkReset;
+    font: 700 1.6rem / 1 $navFontFamily;
+    @include transition(color);
+
+    &:hover {
+      color: $colorAccent400;
+    }
+  }
+}

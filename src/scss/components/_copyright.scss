@@ -1,0 +1,12 @@
+.copyright {
+  text-align: center;
+  background-color: $colorPrimary400;
+  color: $white;
+  padding: 1.6rem;
+  font-size: 1.2rem;
+
+  @include media(">=xl") {
+    padding: 3.2rem;
+    font-size: 1.6rem;
+  }
+}

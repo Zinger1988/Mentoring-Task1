@@ -1,0 +1,10 @@
+.input-textarea {
+  @include baseInputAppearance();
+  display: block;
+  min-height: 12rem;
+  width: 100%;
+
+  @include media(">=lg") {
+    min-height: 21rem;
+  }
+}

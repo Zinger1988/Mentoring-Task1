@@ -1,0 +1,40 @@
+.footer {
+  @extend .section;
+  padding-bottom: 0;
+
+  &__title {
+    @extend .section__title;
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    margin: 0 0 1.8rem;
+
+    @include media(">=xl") {
+      font-size: 2.4rem;
+      margin: 0 0 2.4rem;
+    }
+  }
+
+  &__holder {
+    display: grid;
+    gap: 4rem;
+    margin: 0 0 5rem;
+
+    @include media(">=lg") {
+      grid-template-columns: 1fr 1.89fr;
+      align-items: start;
+    }
+
+    @include media(">=xl") {
+      grid-template-columns: 1fr 1.89fr;
+      gap: 8rem 10rem;
+      margin: 0 0 12rem;
+    }
+  }
+
+  &__map {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,21 @@
+.input-text {
+  display: block;
+  width: 100%;
+  min-height: 4.4rem;
+  @include baseInputAppearance();
+
+  @include media(">=xl") {
+    min-height: 5.6rem;
+    border-radius: 0.4rem;
+  }
+
+  &--white {
+    border-color: transparent;
+    background-color: $white;
+    color: $black;
+  }
+
+  &--rounded {
+    @include rounded();
+  }
+}

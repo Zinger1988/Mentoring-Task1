@@ -15,7 +15,12 @@ $black: #000;
 $grey: #e6e7e8;
 
 $shadowColor: #0f1018;
+$borderColor: rgba($white, 0.2);
+$borderColorFocus: rgba($white, 0.6);
+
 $blockShadow: 0 0 2.4rem $shadowColor;
+$blockBorder: 1px solid $borderColor;
+$blockBorderFocus: 1px solid $borderColorFocus;
 
 // font size of html-element that equals to 16px * 0.625 = 10px
 // used as rem-base for nested elements font-size properties
@@ -27,9 +32,16 @@ $breakpoints: (
   "sm": 576px,
   "md": 768px,
   "lg": 992px,
-  "xl": 1200px,
+  "xl": 1400px,
 );
 
 // fonts
 $baseFontFamily: "Public Sans", Arial, sans-serif;
 $headingFontFamily: "Outfit", Arial, sans-serif;
+$navFontFamily: $headingFontFamily;
+
+// forms
+$inputBgColor: $colorPrimary400;
+$placeholderColor: $grey500;
+$inputBorder: $blockBorder;
+$inputBorderFocus: $blockBorderFocus;

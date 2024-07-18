@@ -1,0 +1,71 @@
+form,
+fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+$fieldTypes: "text", "password", "date", "datetime", "email", "number", "search", "tel",
+  "month", "week";
+
+@each $type in $fieldTypes {
+  input[type="#{$type}"] {
+    @extend %textEllipsis;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &::placeholder {
+      opacity: 1;
+      @include transition(opacity);
+    }
+
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+textarea {
+  &::placeholder {
+    opacity: 1;
+    @include transition(opacity);
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+@mixin baseInputAppearance() {
+  font-weight: 300;
+  padding: 0.825em 1.5em;
+  border-radius: 0.4rem;
+  background-color: $inputBgColor;
+  border: $inputBorder;
+  color: $white;
+  outline: none;
+  @include transition(box-shadow, border);
+
+  @include media(">=xl") {
+    border-radius: 0.4rem;
+  }
+
+  &::placeholder {
+    color: $placeholderColor;
+  }
+
+  &:hover,
+  &:focus {
+    border: $inputBorderFocus;
+    box-shadow: 0 0 0 0.5rem rgba($white, 0.3);
+  }
+}

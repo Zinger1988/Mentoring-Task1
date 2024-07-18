@@ -17,3 +17,7 @@
     margin-right: 0;
   }
 }
+
+@mixin rounded() {
+  border-radius: 1000rem;
+}

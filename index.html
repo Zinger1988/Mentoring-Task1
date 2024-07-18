@@ -10,51 +10,66 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image/svg+xml" href="img/icons.svg" />
+    <link rel="preload" as="image" href="img/icons.svg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <!--#region header-->
-      <header class="header">
+      <header class="header wrapper__header">
         <div class="header__container">
-          <!--#region nav-->
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#home" class="main-nav__link">Home</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#about" class="main-nav__link">About</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#portfolio" class="main-nav__link">Portfolio</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#services" class="main-nav__link">Services</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#resume" class="main-nav__link">Resume</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#client" class="main-nav__link">Client</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#blog" class="main-nav__link">Blog</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#contact" class="main-nav__link">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <!--#endregion nav-->
+          <div class="header__holder">
+            <!--#region nav-->
+            <nav class="main-nav header__nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#home" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#about" class="main-nav__link">About</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#portfolio" class="main-nav__link">Portfolio</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#services" class="main-nav__link">Services</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#resume" class="main-nav__link">Resume</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#client" class="main-nav__link">Client</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#blog" class="main-nav__link">Blog</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#contact" class="main-nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <!--#endregion nav-->
+
+            <div class="header__contact">
+              <button class="btn">Download CV</button>
+            </div>
+
+            <div class="header__menu">
+              <button class="btn btn--outline">
+                <svg class="icon btn__icon">
+                  <use href="img/icons.svg#menu" />
+                </svg>
+                <span>MENU</span>
+              </button>
+            </div>
+          </div>
         </div>
       </header>
       <!--#endregion header-->
 
-      <main>
+      <main class="wrapper__content">
         <!--#region section-->
-        <section class="section section--hero">
+        <section class="section section--hero" id="home">
           <div class="section__container">
             <!--#region hero-->
             <div class="hero">
@@ -85,9 +100,34 @@
 
               <!--#region hero col-->
               <div class="hero__col">
-                <div class="intro-photo hero__img">
-                  <img src="" class="intro-img__item" alt="Johan Deo" />
-                </div>
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/hero/01-320.webp 1x, img/hero/01-320@2x.webp 2x"
+                    media="(max-width: 535px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="img/hero/01-536.webp 1x, img/hero/01-536@2x.webp 2x"
+                    media="(min-width: 536px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="img/hero/01-320.png 1x, img/hero/01-320@2x.png 2x"
+                    media="(max-width: 535px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="img/hero/01-536.png 1x, img/hero/01-536@2x.png 2x"
+                    media="(min-width: 536px)"
+                  />
+                  <img
+                    loading="lazy"
+                    class="hero__img hero__img--lg hero__img--right"
+                    src="img/hero/01-768.png"
+                    alt="Johan Deo - Professional Designer"
+                  />
+                </picture>
               </div>
               <!--#endregion hero col-->
             </div>
@@ -97,17 +137,40 @@
         <!--#endregion section-->
 
         <!--#region section-->
-        <section class="section section--lighten section--hero">
+        <section class="section section--lighten section--hero" id="about">
           <div class="section__container">
             <!--#region hero-->
             <div class="hero">
               <!--#region hero col-->
               <div class="hero__col">
-                <img
-                  class="hero__img"
-                  src="img/frame.svg"
-                  alt="Johan Deo - Professional Designer"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/hero/02-320.webp 1x, img/hero/02-320@2x.webp 2x"
+                    media="(max-width: 536px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="img/hero/02-536.webp 1x, img/hero/02-536@2x.webp 2x"
+                    media="(min-width: 537px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="img/hero/02-320.png 1x, img/hero/02-320@2x.png 2x"
+                    media="(max-width: 536px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="img/hero/02-536.png 1x, img/hero/02-536@2x.png 2x"
+                    media="(min-width: 537px)"
+                  />
+                  <img
+                    loading="lazy"
+                    class="hero__img"
+                    src="img/hero/02-536.png"
+                    alt="Johan Deo - Professional Designer"
+                  />
+                </picture>
               </div>
               <!--#endregion hero col-->
 
@@ -165,7 +228,7 @@
         <!--#endregion section-->
 
         <!--#region section-->
-        <section class="section">
+        <section class="section" id="portfolio">
           <div class="section__container">
             <!--#region title-->
             <div class="title title--center section__title">
@@ -187,12 +250,24 @@
                 <div class="tabs__content-item">
                   <!--#region portfolio-->
                   <div class="portfolio">
+                    <!--#region portfolio card-->
                     <a href="#" class="portfolio-card portfolio__item">
-                      <img
-                        class="portfolio-card__image-item"
-                        src="/img/portfolio/01.jpg"
-                        alt="Project prewiev"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="/img/portfolio/01.webp 1x, /img/portfolio/01@2x.webp 2x"
+                        />
+                        <source
+                          type="image/jpeg"
+                          srcset="/img/portfolio/01.jpg 1x, /img/portfolio/01@2x.jpg 2x"
+                        />
+                        <img
+                          loading="lazy"
+                          class="portfolio-card__image-item"
+                          src="/img/portfolio/01.jpg"
+                          alt="Project prewiev"
+                        />
+                      </picture>
                       <div class="portfolio-card__text">
                         <h5 class="portfolio-card__title">Mobile Mockup Design</h5>
                         <div class="portfolio-card__description">
@@ -200,12 +275,26 @@
                         </div>
                       </div>
                     </a>
+                    <!--#endregion portfolio card-->
+
+                    <!--#region portfolio card-->
                     <a href="#" class="portfolio-card portfolio__item">
-                      <img
-                        class="portfolio-card__image-item"
-                        src="/img/portfolio/02.jpg"
-                        alt="Project prewiev"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="/img/portfolio/02.webp 1x, /img/portfolio/02@2x.webp 2x"
+                        />
+                        <source
+                          type="image/jpeg"
+                          srcset="/img/portfolio/02.jpg 1x, /img/portfolio/02@2x.jpg 2x"
+                        />
+                        <img
+                          loading="lazy"
+                          class="portfolio-card__image-item"
+                          src="/img/portfolio/02.jpg"
+                          alt="Project prewiev"
+                        />
+                      </picture>
                       <div class="portfolio-card__text">
                         <h5 class="portfolio-card__title">Mobile Mockup Design</h5>
                         <div class="portfolio-card__description">
@@ -213,12 +302,26 @@
                         </div>
                       </div>
                     </a>
+                    <!--#endregion portfolio card-->
+
+                    <!--#region portfolio card-->
                     <a href="#" class="portfolio-card portfolio__item">
-                      <img
-                        class="portfolio-card__image-item"
-                        src="/img/portfolio/03.jpg"
-                        alt="Project prewiev"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="/img/portfolio/03.webp 1x, /img/portfolio/03@2x.webp 2x"
+                        />
+                        <source
+                          type="image/jpeg"
+                          srcset="/img/portfolio/03.jpg 1x, /img/portfolio/03@2x.jpg 2x"
+                        />
+                        <img
+                          loading="lazy"
+                          class="portfolio-card__image-item"
+                          src="/img/portfolio/03.jpg"
+                          alt="Project prewiev"
+                        />
+                      </picture>
                       <div class="portfolio-card__text">
                         <h5 class="portfolio-card__title">Mobile Mockup Design</h5>
                         <div class="portfolio-card__description">
@@ -226,12 +329,26 @@
                         </div>
                       </div>
                     </a>
+                    <!--#endregion portfolio card-->
+
+                    <!--#region portfolio card-->
                     <a href="#" class="portfolio-card portfolio__item">
-                      <img
-                        class="portfolio-card__image-item"
-                        src="/img/portfolio/04.jpg"
-                        alt="Project prewiev"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="/img/portfolio/04.webp 1x, /img/portfolio/04@2x.webp 2x"
+                        />
+                        <source
+                          type="image/jpeg"
+                          srcset="/img/portfolio/04.jpg 1x, /img/portfolio/04@2x.jpg 2x"
+                        />
+                        <img
+                          loading="lazy"
+                          class="portfolio-card__image-item"
+                          src="/img/portfolio/04.jpg"
+                          alt="Project prewiev"
+                        />
+                      </picture>
                       <div class="portfolio-card__text">
                         <h5 class="portfolio-card__title">Mobile Mockup Design</h5>
                         <div class="portfolio-card__description">
@@ -239,12 +356,26 @@
                         </div>
                       </div>
                     </a>
+                    <!--#endregion portfolio card-->
+
+                    <!--#region portfolio card-->
                     <a href="#" class="portfolio-card portfolio__item">
-                      <img
-                        class="portfolio-card__image-item"
-                        src="/img/portfolio/05.jpg"
-                        alt="Project prewiev"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="/img/portfolio/05.webp 1x, /img/portfolio/05@2x.webp 2x"
+                        />
+                        <source
+                          type="image/jpeg"
+                          srcset="/img/portfolio/05.jpg 1x, /img/portfolio/05@2x.jpg 2x"
+                        />
+                        <img
+                          loading="lazy"
+                          class="portfolio-card__image-item"
+                          src="/img/portfolio/05.jpg"
+                          alt="Project prewiev"
+                        />
+                      </picture>
                       <div class="portfolio-card__text">
                         <h5 class="portfolio-card__title">Mobile Mockup Design</h5>
                         <div class="portfolio-card__description">
@@ -252,12 +383,26 @@
                         </div>
                       </div>
                     </a>
+                    <!--#endregion portfolio card-->
+
+                    <!--#region portfolio card-->
                     <a href="#" class="portfolio-card portfolio__item">
-                      <img
-                        class="portfolio-card__image-item"
-                        src="/img/portfolio/06.jpg"
-                        alt="Project prewiev"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="/img/portfolio/06.webp 1x, /img/portfolio/06@2x.webp 2x"
+                        />
+                        <source
+                          type="image/jpeg"
+                          srcset="/img/portfolio/06.jpg 1x, /img/portfolio/06@2x.jpg 2x"
+                        />
+                        <img
+                          loading="lazy"
+                          class="portfolio-card__image-item"
+                          src="/img/portfolio/06.jpg"
+                          alt="Project prewiev"
+                        />
+                      </picture>
                       <div class="portfolio-card__text">
                         <h5 class="portfolio-card__title">Mobile Mockup Design</h5>
                         <div class="portfolio-card__description">
@@ -265,6 +410,7 @@
                         </div>
                       </div>
                     </a>
+                    <!--#endregion portfolio card-->
                   </div>
                   <!--#endregion portfolio-->
                 </div>
@@ -276,7 +422,7 @@
         <!--#endregion section-->
 
         <!--#region section-->
-        <section class="section section--lighten">
+        <section class="section section--lighten" id="services">
           <div class="section__container">
             <!--#region title-->
             <div class="title title--center section__title">
@@ -291,6 +437,7 @@
               <a href="#" class="services__item service-card">
                 <div class="service-card__img">
                   <img
+                    loading="lazy"
                     class="service-card__img-item"
                     src="img/services/01.png"
                     alt="icon"
@@ -303,17 +450,19 @@
                     collaboration...
                   </p>
                 </div>
-                <div href="#" class="service-card__btn">
+                <div class="service-card__btn">
                   <svg class="icon service-card__btn-icon">
                     <use href="img/icons.svg#arrow-right" />
                   </svg>
                 </div>
               </a>
               <!--#endregion service card-->
+
               <!--#region service card-->
               <a href="#" class="services__item service-card">
                 <div class="service-card__img">
                   <img
+                    loading="lazy"
                     class="service-card__img-item"
                     src="img/services/02.png"
                     alt="icon"
@@ -326,17 +475,19 @@
                     collaboration...
                   </p>
                 </div>
-                <div href="#" class="service-card__btn">
+                <div class="service-card__btn">
                   <svg class="icon service-card__btn-icon">
                     <use href="img/icons.svg#arrow-right" />
                   </svg>
                 </div>
               </a>
               <!--#endregion service card-->
+
               <!--#region service card-->
               <a href="#" class="services__item service-card">
                 <div class="service-card__img">
                   <img
+                    loading="lazy"
                     class="service-card__img-item"
                     src="img/services/03.png"
                     alt="icon"
@@ -349,17 +500,19 @@
                     collaboration...
                   </p>
                 </div>
-                <div href="#" class="service-card__btn">
+                <div class="service-card__btn">
                   <svg class="icon service-card__btn-icon">
                     <use href="img/icons.svg#arrow-right" />
                   </svg>
                 </div>
               </a>
               <!--#endregion service card-->
+
               <!--#region service card-->
               <a href="#" class="services__item service-card">
                 <div class="service-card__img">
                   <img
+                    loading="lazy"
                     class="service-card__img-item"
                     src="img/services/04.png"
                     alt="icon"
@@ -372,7 +525,7 @@
                     collaboration...
                   </p>
                 </div>
-                <div href="#" class="service-card__btn">
+                <div class="service-card__btn">
                   <svg class="icon service-card__btn-icon">
                     <use href="img/icons.svg#arrow-right" />
                   </svg>
@@ -386,7 +539,7 @@
         <!--#endregion section-->
 
         <!--#region section-->
-        <section class="section section--hero">
+        <section class="section section--hero" id="resume">
           <div class="section__container">
             <!--#region hero-->
             <div class="hero">
@@ -397,6 +550,7 @@
                     <b class="badge title__badge">Resume</b>
                     <h2 class="title__heading">Skill & Experience</h2>
                   </div>
+
                   <!--#region tabs-->
                   <div class="tabs">
                     <div class="tabs__controls">
@@ -408,6 +562,7 @@
                       <div class="tabs__content-item">
                         <!--#region skills-->
                         <div class="skills">
+                          <!--#region progress-->
                           <div class="progress skills__item">
                             <progress
                               id="illustrator"
@@ -423,7 +578,9 @@
                               <div class="progress__indicator"></div>
                             </div>
                           </div>
+                          <!--#endregion progress-->
 
+                          <!--#region progress-->
                           <div class="progress skills__item">
                             <progress
                               id="photoshop"
@@ -439,7 +596,9 @@
                               <div class="progress__indicator"></div>
                             </div>
                           </div>
+                          <!--#endregion progress-->
 
+                          <!--#region progress-->
                           <div class="progress skills__item">
                             <progress
                               id="afterEffect"
@@ -455,7 +614,9 @@
                               <div class="progress__indicator"></div>
                             </div>
                           </div>
+                          <!--#endregion progress-->
 
+                          <!--#region progress-->
                           <div class="progress skills__item">
                             <progress
                               id="figma"
@@ -469,6 +630,7 @@
                               <div class="progress__indicator"></div>
                             </div>
                           </div>
+                          <!--#endregion progress-->
                         </div>
                         <!--#endregion skills-->
                       </div>
@@ -481,11 +643,34 @@
 
               <!--#region hero col-->
               <div class="hero__col">
-                <img
-                  class="hero__img"
-                  src="img/frame.svg"
-                  alt="Johan Deo - Professional Designer"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/hero/03-320.webp 1x, img/hero/03-320@2x.webp 2x"
+                    media="(max-width: 536px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="img/hero/03-536.webp 1x, img/hero/03-536@2x.webp 2x"
+                    media="(min-width: 537px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="img/hero/03-320.png 1x, img/hero/03-320@2x.png 2x"
+                    media="(max-width: 536px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="img/hero/03-536.png 1x, img/hero/03-536@2x.png 2x"
+                    media="(min-width: 537px)"
+                  />
+                  <img
+                    loading="lazy"
+                    class="hero__img hero__img--right"
+                    src="img/hero/03-536.png"
+                    alt="Johan Deo - Professional Designer"
+                  />
+                </picture>
               </div>
               <!--#endregion hero col-->
             </div>
@@ -495,7 +680,7 @@
         <!--#endregion section-->
 
         <!--#region section-->
-        <section class="section section--lighten">
+        <section class="section section--lighten" id="client">
           <div class="section__container">
             <!--#region title-->
             <div class="title title--center section__title">
@@ -522,6 +707,7 @@
                 </div>
                 <div class="review-card__photo">
                   <img
+                    loading="lazy"
                     class="review-card__photo-item"
                     src="img/reviews/01.jpg"
                     alt="Dawn johnson"
@@ -529,6 +715,7 @@
                 </div>
               </article>
               <!--#endregion review card-->
+
               <!--#region review card-->
               <article class="reviews__item review-card">
                 <div class="review-card__holder">
@@ -545,6 +732,7 @@
                 </div>
                 <div class="review-card__photo">
                   <img
+                    loading="lazy"
                     class="review-card__photo-item"
                     src="img/reviews/02.jpg"
                     alt="Dawn johnson"
@@ -552,6 +740,7 @@
                 </div>
               </article>
               <!--#endregion review card-->
+
               <!--#region review card-->
               <article class="reviews__item review-card">
                 <div class="review-card__holder">
@@ -568,6 +757,7 @@
                 </div>
                 <div class="review-card__photo">
                   <img
+                    loading="lazy"
                     class="review-card__photo-item"
                     src="img/reviews/03.jpg"
                     alt="Dawn johnson"
@@ -582,7 +772,7 @@
         <!--#endregion section-->
 
         <!--#region section-->
-        <section class="section">
+        <section class="section" id="blog">
           <div class="section__container">
             <!--#region title-->
             <div class="title title--center section__title">
@@ -597,13 +787,37 @@
               <article class="posts__item post-card">
                 <a href="#" class="post-card__img-link">
                   <div class="post-card__img">
-                    <img
-                      class="post-card__img-item"
-                      src="img/posts/01.jpg"
-                      alt="Post photo"
-                    />
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/posts/01-320.webp 1x, img/posts/01-320@2x.webp 2x"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/posts/01-768.webp 1x, img/posts/01-768@2x.webp 2x"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/posts/01-320.jpg 1x, img/posts/01-320@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/posts/01-768.jpg 1x, img/posts/01-768@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        loading="lazy"
+                        class="post-card__img-item"
+                        src="img/posts/01-320.jpg"
+                        alt="Johan Deo - Professional Designer"
+                      />
+                    </picture>
                   </div>
                 </a>
+
                 <div class="post-card__meta post-meta">
                   <div class="post-meta__item">
                     <svg class="icon post-meta__icon">
@@ -624,6 +838,73 @@
                     <div class="post-meta__label">23k+ view</div>
                   </div>
                 </div>
+
+                <div class="post-card__text">
+                  <h3 class="post-card__title">Bankruptcy law the federal law</h3>
+                  <p class="post-card__excerpt">
+                    Conveniently innovate web services user-centric before progressive
+                    architect distinctively.
+                  </p>
+                </div>
+              </article>
+              <!--#endregion post card-->
+
+              <!--#region post card-->
+              <article class="posts__item post-card">
+                <a href="#" class="post-card__img-link">
+                  <div class="post-card__img">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/posts/02-320.webp 1x, img/posts/02-320@2x.webp 2x"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/posts/02-320.webp 1x, img/posts/02-320@2x.webp 2x"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/posts/02-320.jpg 1x, img/posts/02-320@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/posts/02-320.jpg 1x, img/posts/02-320@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        loading="lazy"
+                        class="post-card__img-item"
+                        src="img/posts/02-320.jpg"
+                        alt="Johan Deo - Professional Designer"
+                      />
+                    </picture>
+                  </div>
+                </a>
+
+                <div class="post-card__meta post-meta">
+                  <div class="post-meta__item">
+                    <svg class="icon post-meta__icon">
+                      <use href="img/icons.svg#user" />
+                    </svg>
+                    <div class="post-meta__label">Admin</div>
+                  </div>
+                  <div class="post-meta__item">
+                    <svg class="icon post-meta__icon">
+                      <use href="img/icons.svg#comment" />
+                    </svg>
+                    <div class="post-meta__label">25</div>
+                  </div>
+                  <div class="post-meta__item">
+                    <svg class="icon post-meta__icon">
+                      <use href="img/icons.svg#show" />
+                    </svg>
+                    <div class="post-meta__label">23k+ view</div>
+                  </div>
+                </div>
+
                 <div class="post-card__text">
                   <h3 class="post-card__title">Bankruptcy law the federal law</h3>
                   <p class="post-card__excerpt">
@@ -637,13 +918,37 @@
               <article class="posts__item post-card">
                 <a href="#" class="post-card__img-link">
                   <div class="post-card__img">
-                    <img
-                      class="post-card__img-item"
-                      src="img/posts/02.jpg"
-                      alt="Post photo"
-                    />
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/posts/03-320.webp 1x, img/posts/03-320@2x.webp 2x"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/posts/03-768.webp 1x, img/posts/03-768@2x.webp 2x"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/posts/03-320.jpg 1x, img/posts/03-320@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/posts/03-768.jpg 1x, img/posts/03-768@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        loading="lazy"
+                        class="post-card__img-item"
+                        src="img/posts/03-320.jpg"
+                        alt="Johan Deo - Professional Designer"
+                      />
+                    </picture>
                   </div>
                 </a>
+
                 <div class="post-card__meta post-meta">
                   <div class="post-meta__item">
                     <svg class="icon post-meta__icon">
@@ -664,46 +969,7 @@
                     <div class="post-meta__label">23k+ view</div>
                   </div>
                 </div>
-                <div class="post-card__text">
-                  <h3 class="post-card__title">Bankruptcy law the federal law</h3>
-                  <p class="post-card__excerpt">
-                    Conveniently innovate web services user-centric before progressive
-                    architect distinctively.
-                  </p>
-                </div>
-              </article>
-              <!--#endregion post card-->
-              <!--#region post card-->
-              <article class="posts__item post-card">
-                <a href="#" class="post-card__img-link">
-                  <div class="post-card__img">
-                    <img
-                      class="post-card__img-item"
-                      src="img/posts/03.jpg"
-                      alt="Post photo"
-                    />
-                  </div>
-                </a>
-                <div class="post-card__meta post-meta">
-                  <div class="post-meta__item">
-                    <svg class="icon post-meta__icon">
-                      <use href="img/icons.svg#user" />
-                    </svg>
-                    <div class="post-meta__label">Admin</div>
-                  </div>
-                  <div class="post-meta__item">
-                    <svg class="icon post-meta__icon">
-                      <use href="img/icons.svg#comment" />
-                    </svg>
-                    <div class="post-meta__label">25</div>
-                  </div>
-                  <div class="post-meta__item">
-                    <svg class="icon post-meta__icon">
-                      <use href="img/icons.svg#show" />
-                    </svg>
-                    <div class="post-meta__label">23k+ view</div>
-                  </div>
-                </div>
+
                 <div class="post-card__text">
                   <h3 class="post-card__title">Bankruptcy law the federal law</h3>
                   <p class="post-card__excerpt">
@@ -722,7 +988,7 @@
         <!--#region section-->
         <section class="section section--lighten">
           <div class="section__container">
-            <!--#region reviews-->
+            <!--#region subscribe-->
             <div class="subscribe">
               <div class="subscribe__col">
                 <div class="title subscribe__title">
@@ -738,39 +1004,169 @@
 
               <div class="subscribe__col">
                 <form action="#" method="post" class="subscribe__form">
-                  <input type="email" name="email" placeholder="Enter your Email" />
-                  <button class="btn btn--rounded">Subscribe</button>
+                  <input
+                    class="input-text input-text--white input-text--rounded subscribe__input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    required
+                  />
+                  <button class="btn btn--rounded subscribe__btn">Subscribe</button>
                 </form>
               </div>
             </div>
-            <!--#endregion reviews-->
-          </div>
-        </section>
-        <!--#endregion section-->
-
-        <!--#region section-->
-        <section class="section">
-          <div class="section__container">
-            <!--#region title-->
-            <div class="title title--center section__title">
-              <b class="badge title__badge">Contact</b>
-              <h2 class="title__heading">Get in Touch</h2>
-            </div>
-            <!--#endregion title-->
-
-            <!--#region contacts-->
-            <div class="contacts">
-              <div class="contacts__list"></div>
-              <div class="contacts__form"></div>
-              <div class="contacts__map"></div>
-            </div>
-            <!--#endregion contacts-->
+            <!--#endregion subscribe-->
           </div>
         </section>
         <!--#endregion section-->
       </main>
-      <footer></footer>
+
+      <!--#region footer-->
+      <footer class="footer wrapper__footer" id="contact">
+        <div class="footer__container">
+          <!--#region title-->
+          <div class="title title--center footer__title">
+            <b class="badge title__badge">Contact</b>
+            <h2 class="title__heading">Get in Touch</h2>
+          </div>
+          <!--#endregion title-->
+
+          <div class="footer__holder">
+            <!--#region contacts-->
+            <div class="contacts footer__contacts">
+              <article class="contacts__item contact-card">
+                <div class="contact-card__col">
+                  <div class="contact-card__icon">
+                    <svg class="icon contact-card__icon-item">
+                      <use href="img/icons.svg#phone" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="contact-card__col">
+                  <h3 class="contact-card__title">Phone number</h3>
+                  <div class="contact-card__description">
+                    <p>
+                      <a class="contact-card__link" href="tel:+8801284593">
+                        +59991234567
+                      </a>
+                      ,
+                      <a class="contact-card__link" href="tel:+8801284593">
+                        +59991234568
+                      </a>
+                      ,
+                      <a class="contact-card__link" href="tel:+8801284593">
+                        +59991234569
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="contacts__item contact-card">
+                <div class="contact-card__col">
+                  <div class="contact-card__icon">
+                    <svg class="icon contact-card__icon-item">
+                      <use href="img/icons.svg#mail" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="contact-card__col">
+                  <h3 class="contact-card__title">Email Address</h3>
+                  <div class="contact-card__description">
+                    <p>
+                      <a class="contact-card__link" href="mailto:+8801284593">
+                        sahjahansagor2020@.com
+                      </a>
+                      ,
+                      <a class="contact-card__link" href="mailto:+8801284593">
+                        sahjahansagor3020@.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="contacts__item contact-card">
+                <div class="contact-card__col">
+                  <div class="contact-card__icon">
+                    <svg class="icon contact-card__icon-item">
+                      <use href="img/icons.svg#pointer" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="contact-card__col">
+                  <h3 class="contact-card__title">Office address</h3>
+                  <div class="contact-card__description">
+                    <p>Suite 1307, Tropical Center 218 New Elephant Road,</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!--#endregion contacts-->
+
+            <!--#region contact form-->
+            <div class="footer__contact-form">
+              <h3 class="footer__subtitle">Send Message</h3>
+              <form class="contact-form" action="/" method="post">
+                <fieldset class="contact-form__body">
+                  <div class="contact-form__row">
+                    <input
+                      type="text"
+                      name="name"
+                      class="input-text"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="contact-form__row">
+                    <input
+                      type="email"
+                      name="email"
+                      class="input-text"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="contact-form__row contact-form__row--message">
+                    <textarea
+                      name="message"
+                      class="input-textarea"
+                      placeholder="Your message"
+                      required
+                    ></textarea>
+                  </div>
+                </fieldset>
+                <div class="contact-form__control">
+                  <button class="btn">Submit message</button>
+                </div>
+              </form>
+            </div>
+            <!--#endregion contact form-->
+
+            <!--#region map-->
+            <div class="map footer__map">
+              <iframe
+                class="map__frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81189.53966793409!2d30.706162039593583!3d50.51234566926493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4dbd17dd51cef%3A0xf6ebb2dcfc8e9689!2z0JHRgNC-0LLQsNGA0LgsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1suk!2sua!4v1721295394932!5m2!1suk!2sua"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <!--#endregion map-->
+          </div>
+        </div>
+
+        <!--#region copyright-->
+        <div class="footer__copyright copyright">
+          <div class="copyright__container">
+            All Right Reserved. Designed and Developed by LabArtisan
+          </div>
+        </div>
+        <!--#endregion copyright-->
+      </footer>
+      <!--#endregion footer-->
     </div>
-    <script src="js/main.js"></script>
   </body>
 </html>

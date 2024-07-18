@@ -1,0 +1,20 @@
+.contact-form {
+  &__body {
+    display: grid;
+    gap: 1.4rem;
+    margin: 0 0 2rem;
+
+    @include media(">=lg") {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media(">=xl") {
+      margin: 0 0 4rem;
+      gap: 1.8rem 3rem;
+    }
+  }
+
+  &__row--message {
+    grid-column: 1 / -1;
+  }
+}

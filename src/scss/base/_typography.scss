@@ -1,3 +1,13 @@
 b {
   font-weight: 700;
 }
+
+a {
+  color: $colorAccent400;
+  text-decoration: underline transparent;
+  @include transition(text-decoration);
+
+  &:hover {
+    text-decoration: underline $colorAccent400;
+  }
+}
