@@ -6,8 +6,10 @@ body {
   font: 300 1.4rem/ 1.5 $baseFontFamily;
   background-color: $colorPrimary500;
   color: $white;
+  padding-top: 6rem;
 
   @include media(">=xl") {
+    padding-top: 16rem;
     font-size: 1.6rem;
   }
 }

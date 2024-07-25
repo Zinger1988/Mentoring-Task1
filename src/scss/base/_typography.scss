@@ -11,3 +11,8 @@ a {
     text-decoration: underline $colorAccent400;
   }
 }
+
+strong {
+  color: $colorAccent400;
+  font-weight: inherit;
+}
